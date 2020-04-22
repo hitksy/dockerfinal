@@ -1,27 +1,28 @@
-# dockerfiles-centos-user-adderable
-Centos7, It support base user creation and password setting.
+# dockerfiles-ubuntu-user-adderable
+ubuntu, It support base user creation and password setting.
 
 # Building & Running
 
 Copy the sources to your docker host and build the container, and to run.
 ```
-	docker build --rm -t nowage/centos7 .
-	docker run -it --name c1 -e USER=nowage -e PASSWD=nowage nowage/centos7
+	docker build --rm -t hitksy/dockerfinal .
+	docker run -it --name n1 hitksy/dockerfinal
 ```
 Get the port that the container is listening on:
 
 ```
 # docker ps
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-ad2ad96e4b2f        nowage/centos7      "/bin/bash"         7 seconds ago       Up 6 seconds                            c1
+CREPOSITORY                           TAG                 IMAGE ID            CREATED             SIZE
+hitksy/dockerfinal                   latest              e23546d2ca5c        19 minutes ago      64.2MB
+                           c1
 ```
 
-To test, ("nowage" is username. )
+To test, ("hitksy" is username. )
 ```
-	su - nowage
+	su - hitksy
 ```
 To Rollback
 ```
-    docker rm c1 -f
-    docker rmi nowage/centos7
+    docker rm n1 -f
+    docker rmi hitksy/dockerfinal
 ```
