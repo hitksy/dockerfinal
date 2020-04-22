@@ -1,5 +1,5 @@
-# dockerfiles-centos-user-adderable
-Centos7, It support base user creation and password setting.
+# dockerfiles-ubuntu-user-adderable
+ubuntu, It support base user creation and password setting.
 
 # Building & Running
 
